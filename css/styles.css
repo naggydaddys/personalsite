@@ -1,0 +1,455 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #071835;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  font-size: 1rem;
+}
+
+hr {
+  width: 20%;
+}
+
+/************* CONTAINERS **************/
+.container-fluid {
+  padding: 5% 10%;
+  max-width: 1280px;
+  margin: auto;
+}
+
+/************* SECTIONS ****************/
+.white-section {
+  width: 100%;
+  margin: auto;
+  max-width: 1280px;
+  position: relative;
+}
+
+.colored-section {
+  background-color: #dfe2ec;
+  width: 100%;
+  margin: auto;
+}
+
+/************** NAVBAR ****************/
+.navbar {
+  position: absolute;
+  z-index: 2;
+  right: 20%;
+  background: transparent;
+}
+
+.nav-item {
+  margin: 20px 5% 0;
+}
+
+.nav-link {
+  border-radius: 25px;
+  background-color: #f3b800;
+  width: 111px;
+  text-align: center;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/**************** HOME ****************/
+.home-text {
+  width: 30%;
+  margin: 15% 0 0 10%;
+}
+
+.home-image {
+  width: 75%;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+
+.home-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15%;
+}
+
+/*************** ABOUT ****************/
+.about-content {
+  padding-bottom: 5%;
+  margin-top: 2%;
+}
+
+.about-content,
+.contact-content {
+  padding-top: 3%;
+}
+
+.about-image {
+  width: 80%;
+  margin: auto;
+}
+
+/*************** SKILLS ****************/
+.skills-image {
+  margin-top: 75px;
+  margin-bottom: 50px;
+}
+
+ul.no-bullets {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#skills ul>li {
+  min-height: 30px;
+  padding: 3px 0;
+}
+
+#skills ul>li:hover {
+  background: #F2F2F2;
+}
+
+#skills ul>li .ability-title {
+  display: inline-block;
+  width: 60%;
+}
+
+#skills ul>li .ability-score {
+  float: right;
+}
+
+#skills ul>li .ability-score .glyphicon {
+  color: #DFE0E0;
+  font-size: 14px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#skills ul>li .ability-score .glyphicon.filled {
+  color: #f3b800;
+}
+
+#skills ul>li:hover .ability-score .glyphicon {
+  margin-left: 2px;
+}
+
+.skillset {
+  width: 80%;
+  margin: auto;
+}
+
+/*************** PROJECTS ****************/
+.project-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.project {
+  background: url("../images/project_image.svg");
+  background-repeat: no-repeat;
+  width: 311px;
+  height: 323px;
+  border-radius: 0 0 5px 5px;
+}
+
+#projects .row>div {
+  margin-bottom: 30px;
+}
+
+#projects figure {
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+}
+
+#projects figure h3 {
+  color: #FFF;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+#projects figure p>strong {
+  width: 60px;
+  display: inline-block;
+  margin: 0;
+}
+
+#projects figure img {
+  margin-top: 36px;
+  height: 270px;
+}
+
+#projects figure figcaption {
+  padding: 20px 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#projects figure a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+figure.effect:hover {
+  background: #f3b800;
+  color: #FFF;
+}
+
+figure.effect img {
+  width: 100%;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, -webkit-transform 0.35s;
+  -o-transition: opacity 0.35s, transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+figure.effect:hover img {
+  opacity: 0.2;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+figure.effect figcaption {
+  text-align: left;
+}
+
+figure.effect h3 {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 20px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, -webkit-transform 0.35s;
+  -o-transition: opacity 0.35s, transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
+}
+
+figure.effect:hover h3 {
+  opacity: 1;
+}
+
+figure.effect h3::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  content: "";
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: -webkit-transform 0.35s;
+  -o-transition: transform 0.35s;
+  transition: transform 0.35s;
+  transition: transform 0.35s, -webkit-transform 0.35s;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+}
+
+figure.effect:hover h3::after {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+figure.effect p {
+  padding-top: 10px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, -webkit-transform 0.35s;
+  -o-transition: opacity 0.35s, transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+}
+
+figure.effect:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.projects-image {
+  background-color: #dfe2ec;
+}
+
+.project-text {
+  margin-top: -10%;
+  margin-bottom: 50px;
+}
+
+/*************** CONTACT ****************/
+.contact-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 3% 0;
+}
+
+.contact-image {
+  width: 80%;
+  margin: auto;
+}
+
+.contact-text {
+  margin-top: 3%;
+}
+
+.contact-links {
+  text-align: center;
+  font-size: 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.links {
+  font-size: 1.25rem;
+}
+
+/*************** FOOTER ****************/
+.footer {
+  width: 100%;
+  height: 75px;
+  background-color: #c7dcef;
+}
+
+/*********** MEDIA QUERIES *************/
+@media (min-width: 910px) {
+  .navbar-expand-custom {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  .navbar-expand-custom .navbar-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .navbar-expand-custom .navbar-nav .nav-link {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+  .navbar-expand-custom .navbar-collapse {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+
+  .navbar-expand-custom .navbar-toggler {
+    display: none;
+  }
+}
+
+@media (max-width: 909px) {
+  .navbar {
+    position: absolute;
+    z-index: 2;
+    background: transparent;
+    right: 0;
+    left: 0;
+  }
+
+  .home-text {
+    margin: 15% 0 0 7%;
+  }
+}
+
+@media (max-width: 803px) {
+
+  h1,
+  h2 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .about-image,
+  .contact-image {
+    width: 50%;
+  }
+}
+
+@media (max-width: 645px) {
+
+  h1,
+  h2 {
+    font-size: 3rem;
+  }
+
+  .home-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+
+  .home-image {
+    width: 100%;
+    position: static;
+  }
+
+  .home-text {
+    width: 80%;
+    margin: 10% auto auto;
+  }
+
+  .skillset {
+    width: 100%;
+  }
+
+  .footer {
+    height: 50px;
+  }
+}
